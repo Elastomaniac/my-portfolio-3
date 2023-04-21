@@ -1,0 +1,393 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.header {
+  font-family: "Inika";
+  background: #edf2ec;
+  width: 1440px;
+  height: 134px;
+}
+@media screen and (max-width: 768px) {
+  .header {
+    width: 768px;
+    height: 117px;
+  }
+}
+.header .header-inner {
+  margin: 0 auto;
+  display: flex;
+  width: 1220px;
+  height: 50px;
+  justify-content: space-between;
+}
+.header .header-inner .header-logo {
+  padding-top: 52px;
+  margin-left: -35px;
+}
+.header .header-inner .nav .nav__list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.header .header-inner .nav .nav__list .nav__item {
+  margin: 42px 46px;
+}
+.header .header-inner .nav .nav__list .nav__item a {
+  text-decoration: none;
+  color: #010201;
+}
+.header .header-inner .nav .nav__list .nav__item a:hover {
+  color: #e06733;
+  font-weight: bold;
+}
+
+.section-home {
+  display: flex;
+  background: #edf2ec;
+  box-shadow: 0px 4px 4px #bfbfbf;
+}
+.section-home .container {
+  justify-content: space-between;
+  width: 1222px;
+  display: flex;
+  margin: 62px 109px;
+  background: rgb(237, 242, 236);
+}
+.section-home .container .home-image {
+  margin-top: -45px;
+  margin-left: -10px;
+}
+.section-home .container .home-about {
+  width: 549px;
+  height: 340px;
+  color: rgb(113, 113, 113);
+}
+.section-home .container .home-about .h1 {
+  font-family: "Inter";
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 50px;
+}
+.section-home .container .home-about .h1 span {
+  color: rgb(73, 154, 24);
+}
+.section-home .container .home-about .description {
+  font-family: "Inter";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 35px;
+  margin-top: 42px;
+  color: rgb(99, 96, 96);
+}
+.section-home .container .home-about .home-button {
+  margin-top: 48px;
+  border: 2px solid #e06733;
+  border-radius: 10px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  width: 158px;
+  height: 44px;
+  cursor: pointer;
+}
+
+.section-about-us {
+  background-color: #ffffff;
+}
+.section-about-us .container {
+  width: 1222px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  margin: 93px 109px;
+}
+.section-about-us .container .about__text {
+  margin-top: 50px;
+}
+.section-about-us .container .about__text .h2 {
+  width: 463px;
+  font-family: "Inika";
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 52px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgb(73, 154, 24);
+}
+.section-about-us .container .about__text .h2 span {
+  color: rgb(224, 103, 51);
+}
+.section-about-us .container .about__description {
+  font-family: "Inter";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgb(99, 96, 96);
+  width: 605px;
+  margin-top: 40px;
+}
+
+.section-service {
+  background: #edf2ec;
+}
+.section-service .container {
+  width: 1222px;
+  margin: 0 auto;
+}
+.section-service .container .service__header {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 40px;
+}
+.section-service .container .service__header .h2 {
+  font-family: "Inika";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  color: #499a18;
+  width: 306px;
+}
+.section-service .container .service__header .service__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 559px;
+}
+.section-service .container .service__header .service__buttons button {
+  width: 161px;
+  height: 50px;
+  font-family: "Inika";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgb(224, 103, 51);
+  border: 1px solid rgb(224, 103, 51);
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.service__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.service__content .service__card {
+  text-align: center;
+  border: 1px solid #e3e1d5;
+  border-radius: 20px 20px;
+  margin-top: 55px;
+}
+.service__content .service__card h3 {
+  color: rgb(224, 103, 51);
+  font-family: "Inter";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0em;
+  margin: 10px 0 10px 0;
+}
+.service__content .service__card p {
+  color: rgb(113, 113, 113);
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  margin-bottom: 36px;
+}
+
+.section-price .container {
+  width: 1222px;
+  height: 405px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 115px;
+}
+.section-price .container .prices .prices__header .h2 {
+  font-family: "Inter";
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: 40px;
+}
+.section-price .container .prices .prices__outer-box {
+  width: 332px;
+  height: 282px;
+  border: 1px solid #e3e1d5;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+.section-price .container .prices .prices__outer-box .prices__inner-box {
+  width: 250px;
+  height: 214px;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+.section-price .container .prices .prices__outer-box .prices__inner-box .prices__details {
+  margin: 0 auto;
+}
+.section-price .container .prices .prices__outer-box .prices__inner-box .prices__details .summary {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  align-items: center;
+  width: 250px;
+  height: 50px;
+  background: #edf2ec;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.section-price .container .prices__description-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 452px;
+  height: 191px;
+  font-family: "Inter";
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: 0em;
+  text-align: right;
+  margin-top: 40px;
+}
+.section-price .container .prices__description-box .prices__description {
+  text-align: right;
+}
+.section-price .container .prices__description-box .prices__description span {
+  color: #499a18;
+}
+.section-price .container .prices__description-box button {
+  width: 162px;
+  height: 50px;
+  border: 1px solid #e06733;
+  color: #e06733;
+  font-family: "Inika";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: center;
+  border-radius: 5px;
+}
+.section-price .container .prices__leaves {
+  float: right;
+  margin-top: 40px;
+}
+
+.section-contacts {
+  background-color: #edf2ec;
+}
+.section-contacts .container {
+  width: 1222px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.section-contacts .container .gardener {
+  margin-top: 53px;
+}
+.section-contacts .container .h2 {
+  margin-top: 61px;
+  margin-left: 44px;
+  color: #499a18;
+  font-family: "Inika";
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.section-contacts .container .contacts__details {
+  width: 450px;
+  height: 50px;
+  background: #d6e7d2;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-top: 148px;
+}
+.section-contacts .container .contacts__details .summary {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  margin-left: 20px;
+  font-family: "Inter";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: #717171;
+}
+.section-contacts .container .contacts__details .summary .angle {
+  margin-right: 35px;
+}
+
+.footer {
+  width: 1440px;
+  height: 130px;
+  display: flex;
+  align-items: center;
+}
+.footer .container {
+  font-family: "Inter";
+  width: 1222px;
+  height: 50px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .container .footer__copy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 182px;
+  height: 50px;
+  font-size: 20px;
+}
+.footer .container .footer__copy .footer__copy_github a {
+  text-decoration: none;
+  color: #000;
+}
+.footer .container .footer__rss {
+  font-size: 20px;
+}
+.footer .container .footer__rss a {
+  text-decoration: none;
+  color: #000;
+}
+.footer .container .footer__icons {
+  width: 188px;
+}
+.footer .container .footer__icons .footer_icon {
+  display: flex;
+  justify-content: space-between;
+}/*# sourceMappingURL=style.css.map */
